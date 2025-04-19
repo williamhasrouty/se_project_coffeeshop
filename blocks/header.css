@@ -6,7 +6,8 @@
   min-height: 720px;
   padding: 30px 80px 40px;
   position: relative;
-  font-family: "Inter", Arial, sans-serif;
+  z-index: 1;
+  box-sizing: border-box;
 }
 
 .header__title {
@@ -39,6 +40,7 @@
   right: 5px;
   width: 646px;
   height: 568px;
+  z-index: -1;
 }
 
 .header__footer {

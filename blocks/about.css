@@ -4,7 +4,6 @@
   padding: 100px 80px 173px;
   display: flex;
   justify-content: space-between;
-  font-family: "Inter", Arial, sans-serif;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -23,7 +22,7 @@
   max-width: 660px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .about__paragraph {

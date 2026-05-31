@@ -11,6 +11,7 @@
 }
 
 .header__title {
+  font-family: "Shadows Into Light Two", cursive;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
@@ -21,13 +22,13 @@
 
 .header__span-accent {
   display: block;
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Shadows Into Light Two", cursive;
   font-style: italic;
   color: #3f96f3;
 }
 
 .header__description {
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "noto serif", "times new roman", serif;
   font-size: 20px;
   line-height: 30px;
   margin: 28px 0 0;
@@ -62,4 +63,5 @@
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
+  font-family: "Shadows Into Light Two", cursive;
 }

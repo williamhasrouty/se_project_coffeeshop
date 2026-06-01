@@ -1,5 +1,6 @@
 .header {
-  background: center / cover no-repeat #fff url(../images/background_header.svg);
+  background: center / cover no-repeat rgba(231, 194, 147, 0.8)
+    url(../images/mountains.jpeg);
   display: flex;
   flex-direction: column;
   height: 800px;
@@ -35,14 +36,14 @@
   max-width: 683px;
 }
 
-.header__image {
+/* .header__image {
   position: absolute;
   top: 124px;
   right: 5px;
   width: 646px;
   height: 568px;
   z-index: -1;
-}
+} */
 
 .header__footer {
   margin-top: auto;

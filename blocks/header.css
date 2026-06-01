@@ -19,6 +19,15 @@
   letter-spacing: -0.6px;
   margin: 183px 0 0;
   max-width: 729px;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    0px 2px 0 #fff,
+    2px 0px 0 #fff,
+    0px -2px 0 #fff,
+    -2px 0px 0 #fff;
 }
 
 .header__span-accent {
@@ -26,6 +35,15 @@
   font-family: "Shadows Into Light Two", cursive;
   font-style: italic;
   color: #3f96f3;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff,
+    0px 2px 0 #fff,
+    2px 0px 0 #fff,
+    0px -2px 0 #fff,
+    -2px 0px 0 #fff;
 }
 
 .header__description {
@@ -34,6 +52,15 @@
   line-height: 30px;
   margin: 28px 0 0;
   max-width: 683px;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    0px 1px 0 #fff,
+    1px 0px 0 #fff,
+    0px -1px 0 #fff,
+    -1px 0px 0 #fff;
 }
 
 /* .header__image {
@@ -53,7 +80,7 @@
   align-items: flex-end;
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   color: #6f6f6f;
 }
@@ -61,8 +88,17 @@
 .header__paragraph {
   margin: 0;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   color: #6f6f6f;
   font-family: "Shadows Into Light Two", cursive;
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    0px 1px 0 #fff,
+    1px 0px 0 #fff,
+    0px -1px 0 #fff,
+    -1px 0px 0 #fff;
 }

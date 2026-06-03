@@ -1,6 +1,6 @@
 .form {
-  max-width: 385px;
-  font-family: "Inter", Arial, sans-serif;
+  max-width: 320px;
+
 }
 
 .form__fieldset {
@@ -11,7 +11,7 @@
 
 .form__label {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   color: #000;
 }
@@ -19,13 +19,13 @@
 .form__input {
   display: block;
   box-sizing: border-box;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border-radius: 4px;
   width: 100%;
-  margin: 8px 0 32px;
+  margin: 8px 0 20px;
   border: 1px solid #838383;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   color: #000;
 }
 
@@ -34,13 +34,13 @@ input::placeholder {
 }
 
 .form__button {
-  padding: 20px 0;
+  padding: 15px 0;
   width: 100%;
   border-radius: 4px;
   background-color: #1878dc;
   color: #fff;
   border: none;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -56,15 +56,15 @@ input::placeholder {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-right: 12px;
 }
 
 .form__visible-checkbox {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   border: 1px solid #2f80ed;
   border-radius: 2px;

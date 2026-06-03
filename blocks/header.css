@@ -47,7 +47,7 @@
 }
 
 .header__description {
-  font-family: "noto serif", "times new roman", serif;
+  /* font-family: "noto serif", "times new roman", serif; */
   font-size: 24px;
   line-height: 30px;
   margin: 28px 0 0;

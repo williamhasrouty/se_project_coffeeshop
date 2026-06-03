@@ -6,3 +6,16 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.fade-in-up-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.fade-in-up-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

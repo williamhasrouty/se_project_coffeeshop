@@ -1,6 +1,6 @@
 .recipes {
-  background:  #0a2850 url(../images/background_recipes.svg) no-repeat
-    center/cover;
+  background:  #0a2850 url(../images/mt-rainier-sign.jpeg) no-repeat
+    center / cover;
   color: #fff;
   padding: 100px 80px 215px;
 }
@@ -16,7 +16,7 @@
 
 .recipes__subtitle {
   max-width: 438px;
- 
+
   font-size: 20px;
   line-height: 30px;
   margin: 0 0 80px;

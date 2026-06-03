@@ -1,5 +1,5 @@
 .header {
-  background: center / cover no-repeat rgba(231, 194, 147, 0.8)
+ background: center / cover no-repeat /* rgba(231, 194, 147, 0.8) */
     url(../images/mountains.jpeg);
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 .header {
  background: center / cover no-repeat /* rgba(231, 194, 147, 0.8) */
-    url(../images/mountains.jpeg);
+    url(../images/mt-rainier-mountain.jpg);
   display: flex;
   flex-direction: column;
   height: 800px;

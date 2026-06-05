@@ -3,6 +3,15 @@
     center / cover;
   color: #fff;
   padding: 100px 80px 215px;
+   text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000;
 }
 
 .recipes__title {

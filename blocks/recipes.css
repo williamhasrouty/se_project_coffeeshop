@@ -1,5 +1,5 @@
 .recipes {
-  background:  #0a2850 url(../images/mt-rainier-sign.jpeg) no-repeat
+  background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #0a2850 url(../images/mt-rainier-sign.jpeg) no-repeat
     center / cover;
   color: #fff;
   padding: 100px 80px 215px;

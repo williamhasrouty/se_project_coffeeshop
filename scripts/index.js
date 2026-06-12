@@ -19,3 +19,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(".fade-in-up-scroll");
   animatedElements.forEach((el) => observer.observe(el));
 });
+
+// Back to top button functionality
+const backToTopButton = document.querySelector(".back-to-top");
+
+// Show/hide button based on scroll position
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.classList.add("back-to-top_visible");
+  } else {
+    backToTopButton.classList.remove("back-to-top_visible");
+  }
+});
+
+// Scroll to top when button is clicked
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

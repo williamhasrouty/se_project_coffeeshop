@@ -7,7 +7,7 @@
   position: relative;
   overflow: hidden;
   z-index: 0;
-  
+
 }
 
 .about__title {
@@ -30,7 +30,7 @@
 .about__paragraph {
   margin: 0;
   font-family: "Shadows Into Light Two", cursive;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 30px;
 }
 

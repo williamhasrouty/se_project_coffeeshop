@@ -48,7 +48,7 @@
 
 .header__description {
   /* font-family: "noto serif", "times new roman", serif; */
-  font-size: 24px;
+  font-size: 28px;
   line-height: 30px;
   margin: 28px 0 0;
   max-width: 683px;
@@ -88,8 +88,8 @@
 .header__paragraph {
   margin: 0;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 28px;
+  line-height: 36px;
   color: #000;
   font-family: "Shadows Into Light Two", cursive;
   text-shadow:

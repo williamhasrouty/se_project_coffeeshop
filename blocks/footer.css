@@ -18,8 +18,8 @@
 .footer__column-heading {
   margin: 0 0 20px;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
 .footer__list {
@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   transition: opacity 0.5s;
+  font-size: 24px;
 }
 
 .footer__social-link:hover {
@@ -53,7 +54,7 @@
 
 .footer__copyright {
   margin-top: 40px;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 20px;
   text-align: center;
   width: 100%;

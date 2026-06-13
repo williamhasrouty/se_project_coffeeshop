@@ -34,6 +34,13 @@
   line-height: 30px;
 }
 
+.about__image {
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
 .about__circle {
   position: absolute;
   background-color: #1878dc;

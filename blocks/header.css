@@ -1,5 +1,5 @@
 .header {
- background: center / cover no-repeat /* rgba(231, 194, 147, 0.8) */
+  background: center / cover no-repeat /* rgba(231, 194, 147, 0.8) */
     url(../images/mt-rainier-mountain.jpg);
   display: flex;
   flex-direction: column;
@@ -9,6 +9,17 @@
   position: relative;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, #9b9271);
+  pointer-events: none;
 }
 
 .header__title {

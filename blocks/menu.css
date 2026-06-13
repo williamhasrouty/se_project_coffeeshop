@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   font-family: "Shadows Into Light Two", cursive;
+  position: relative;
 }
 
 .menu__title {

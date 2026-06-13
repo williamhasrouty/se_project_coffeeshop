@@ -1,9 +1,11 @@
 .recipes {
-  background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #0a2850 url(../images/mt-rainier-sign.jpeg) no-repeat
-    center / cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    #0a2850 url(../images/mt-rainier-sign.jpeg) no-repeat center / cover;
   color: #fff;
   padding: 100px 80px 215px;
-   text-shadow:
+  position: relative;
+  text-shadow:
     -2px -2px 0 #000,
     2px -2px 0 #000,
     -2px 2px 0 #000,
@@ -13,6 +15,17 @@
     0px -2px 0 #000,
     -2px 0px 0 #000;
 }
+
+/* .recipes::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #6a5e4e);
+  pointer-events: none;
+} */
 
 .recipes__title {
   max-width: 580px;

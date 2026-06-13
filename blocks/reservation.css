@@ -1,8 +1,10 @@
 .reservation {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #6a5e4e url(../images/mountains.jpeg) no-repeat
-    center / cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    #6a5e4e url(../images/mountains.jpeg) no-repeat center / cover;
   padding: 100px 0 120px;
-    text-shadow:
+  position: relative;
+  text-shadow:
     -2px -2px 0 #fff,
     2px -2px 0 #fff,
     -2px 2px 0 #fff,
@@ -11,6 +13,17 @@
     2px 0px 0 #fff,
     0px -2px 0 #fff,
     -2px 0px 0 #fff;
+}
+
+.reservation::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #0a2850);
+  pointer-events: none;
 }
 
 .reservation__title {

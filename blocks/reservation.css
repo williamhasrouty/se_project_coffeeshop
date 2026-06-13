@@ -15,7 +15,7 @@
     -2px 0px 0 #fff;
 }
 
-.reservation::after {
+/* .reservation::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -24,7 +24,7 @@
   height: 100px;
   background: linear-gradient(to bottom, transparent, #0a2850);
   pointer-events: none;
-}
+} */
 
 .reservation__title {
   margin: 0 0 80px;

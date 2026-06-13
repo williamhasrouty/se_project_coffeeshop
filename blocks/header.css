@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 
-.header::after {
+/* .header::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -20,7 +20,7 @@
   height: 30px;
   background: linear-gradient(to bottom, transparent, #9b9271);
   pointer-events: none;
-}
+} */
 
 .header__title {
   font-family: "Shadows Into Light Two", cursive;

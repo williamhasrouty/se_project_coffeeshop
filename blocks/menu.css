@@ -47,11 +47,12 @@
   animation: fadeInUp 1s ease-out;
   margin-bottom: 50px;
 }
+
 .menu__daily-special {
   background-color: rgba(255, 255, 255, 0.9);
   border: 3px dashed #6f6949;
-  border-radius: 12px;
-  padding: 20px 40px;
+  /* border-radius: 25px; */
+  padding: 15px 30px;
   margin: 0 0 60px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }

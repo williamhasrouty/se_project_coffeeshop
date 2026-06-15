@@ -43,6 +43,32 @@
     -2px 0px 0 #fff;
 }
 
+.menu__subtitle.fade-in-up-scroll {
+  animation: fadeInUp 1s ease-out;
+  margin-bottom: 50px;
+}
+.menu__daily-special {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px dashed #6f6949;
+  border-radius: 12px;
+  padding: 20px 40px;
+  margin: 0 0 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu__daily-special-text {
+  margin: 0;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #2f2f2f;
+}
+
+.menu__daily-special-drink {
+  font-weight: bold;
+  color: #6f6949;
+}
+
 .menu__cards {
   margin: 0;
   padding: 0;

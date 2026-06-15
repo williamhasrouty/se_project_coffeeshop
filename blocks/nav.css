@@ -1,11 +1,18 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  gap: 20px;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
 .nav__logo {
@@ -16,74 +23,83 @@
 }
 
 .nav__links {
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
-  padding: 12px 32px;
+  padding: 0;
   list-style-type: none;
   display: flex;
-  gap: 20px;
-  border: 2px solid #9b9271;
-  border-radius: 20px;
-  text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff,
-    0px 1px 0 #fff,
-    1px 0px 0 #fff,
-    0px -1px 0 #fff,
-    -1px 0px 0 #fff;
+  gap: 25px;
+  align-items: center;
 }
 
 .nav__link {
-  color: #000;
+  color: #2f2f2f;
   text-decoration: none;
   font-family: "Shadows Into Light Two", cursive;
   font-weight: 500;
-  transition: opacity 0.5s;
+  transition: all 0.3s ease;
   cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #6f6949;
+  transition: width 0.3s ease;
 }
 
 .nav__link:hover {
-  opacity: 0.5;
+  color: #6f6949;
+}
+
+.nav__link:hover::after {
+  width: 100%;
 }
 
 .nav__weather {
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 2px solid #6f6949;
+  background: linear-gradient(135deg, #6f6949 0%, #8b7e5a 100%);
   border-radius: 15px;
-  padding: 12px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 18px;
   text-align: center;
-  min-width: 160px;
+  min-width: 140px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav__weather-loading,
 .nav__weather-error {
   margin: 0;
   font-size: 14px;
-  color: #6f6949;
+  color: #fff;
   font-family: "Shadows Into Light Two", cursive;
 }
 
 .nav__weather-condition {
-  margin: 0 0 4px;
-  font-size: 20px;
-  color: #2f2f2f;
+  margin: 0 0 3px;
+  font-size: 18px;
+  color: #fff;
   font-family: "Shadows Into Light Two", cursive;
+  line-height: 1;
 }
 
 .nav__weather-temp {
-  margin: 0 0 3px;
-  font-size: 24px;
+  margin: 0 0 2px;
+  font-size: 22px;
   font-weight: bold;
-  color: #6f6949;
+  color: #fff;
   font-family: "Shadows Into Light Two", cursive;
+  line-height: 1;
 }
 
 .nav__weather-wind {
   margin: 0;
-  font-size: 13px;
-  color: #2f2f2f;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
   font-family: "Shadows Into Light Two", cursive;
+  line-height: 1;
 }

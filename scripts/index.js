@@ -142,6 +142,7 @@ window.onYouTubeIframeAPIReady = function () {
       playlist: musicVideos.join(","),
       enablejsapi: 1,
       origin: window.location.origin,
+      start: 16, // Skip first 15 seconds to avoid intros
     },
     events: {
       onReady: onPlayerReady,
@@ -169,7 +170,10 @@ function onPlayerStateChange(event) {
   // If video ends, play next one
   if (event.data === YT.PlayerState.ENDED) {
     currentVideoIndex = (currentVideoIndex + 1) % musicVideos.length;
-    player.loadVideoById(musicVideos[currentVideoIndex]);
+    player.loadVideoById({
+      videoId: musicVideos[currentVideoIndex],
+      startSeconds: 16, // Skip first 15 seconds of each video
+    });
   }
 }
 

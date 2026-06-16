@@ -6,7 +6,7 @@
   font-size: 16px;
   line-height: 20px;
   gap: 30px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   padding: 15px 40px;
   border-radius: 25px;
@@ -102,4 +102,55 @@
   color: rgba(255, 255, 255, 0.9);
   font-family: "Shadows Into Light Two", cursive;
   line-height: 1;
+}
+
+.nav__music-toggle {
+  background: linear-gradient(135deg, #6f6949 0%, #8b7e5a 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav__music-toggle:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav__music-toggle:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav__music-toggle:active {
+  transform: scale(0.95);
+}
+
+.nav__music-toggle.playing {
+  background: linear-gradient(135deg, #3f96f3 0%, #5eb3ff 100%);
+  animation: musicPulse 2s ease-in-out infinite;
+}
+
+.nav__music-icon {
+  font-size: 24px;
+  display: block;
+  user-select: none;
+}
+
+@keyframes musicPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(94, 179, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(94, 179, 255, 0);
+  }
 }

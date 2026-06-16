@@ -7,6 +7,10 @@
     <meta name="description" content="This is a webpage of Coffee Shop." />
     <meta name="author" content="William Hasrouty" />
     <meta name="keywords" content="coffee shop, espresso, latte, cappuccino" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="compute-pressure=(), geolocation=(), microphone=(), camera=()"
+    />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap"
       rel="stylesheet"
     />
+    <script src="https://www.youtube.com/iframe_api"></script>
   </head>
   <body>
     <div class="page">
@@ -41,13 +46,22 @@
             </li>
 
             <li>
-              <a href="#contacts" class="nav__link">Contacts</a>
+              <a href="#contacts" class="nav__link">About Us</a>
             </li>
           </ul>
           <div class="nav__weather" id="weatherContent">
             <p class="nav__weather-loading">Loading...</p>
           </div>
+          <button
+            class="nav__music-toggle"
+            id="musicToggle"
+            title="Loading music player..."
+            disabled
+          >
+            <span class="nav__music-icon">🎵</span>
+          </button>
         </nav>
+        <div id="youtube-player" style="display: none"></div>
         <h1 class="header__title fade-in-up-scroll">
           <span class="header__span-accent">Ahweh coffee</span>
           in the Twin Peaks Library located in Mt. Rainier, WA.

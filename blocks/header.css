@@ -1,6 +1,5 @@
 .header {
-  background: center / cover no-repeat /* rgba(231, 194, 147, 0.8) */
-    url(../images/mt-rainier-mountain.jpg);
+  background: center / cover no-repeat url(../images/mt-rainier-mountain.jpg);
   display: flex;
   flex-direction: column;
   height: 800px;
@@ -9,6 +8,22 @@
   position: relative;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: -1;
 }
 
 /* .header::after {
@@ -30,48 +45,49 @@
   letter-spacing: -0.6px;
   margin: 183px 0 0;
   max-width: 729px;
+  color: #fff;
   text-shadow:
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    2px 2px 0 #fff,
-    0px 2px 0 #fff,
-    2px 0px 0 #fff,
-    0px -2px 0 #fff,
-    -2px 0px 0 #fff;
+    0 4px 10px rgba(0, 0, 0, 0.8),
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    -3px -3px 0 rgba(0, 0, 0, 0.3),
+    3px -3px 0 rgba(0, 0, 0, 0.3),
+    -3px 3px 0 rgba(0, 0, 0, 0.3),
+    3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.header__title.fade-in-up-scroll {
+  animation: fadeIn 1s ease-out;
+  margin-top: 75px;
 }
 
 .header__span-accent {
   display: block;
   font-family: "Shadows Into Light Two", cursive;
   font-style: italic;
-  color: #3f96f3;
+  color: #5eb3ff;
   text-shadow:
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    2px 2px 0 #fff,
-    0px 2px 0 #fff,
-    2px 0px 0 #fff,
-    0px -2px 0 #fff,
-    -2px 0px 0 #fff;
+    0 4px 10px rgba(0, 0, 0, 0.8),
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    -3px -3px 0 rgba(0, 0, 0, 0.3),
+    3px -3px 0 rgba(0, 0, 0, 0.3),
+    -3px 3px 0 rgba(0, 0, 0, 0.3),
+    3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header__description {
   /* font-family: "noto serif", "times new roman", serif; */
   font-size: 28px;
-  line-height: 30px;
+  line-height: 36px;
   margin: 28px 0 0;
   max-width: 683px;
+  color: #fff;
   text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff,
-    0px 1px 0 #fff,
-    1px 0px 0 #fff,
-    0px -1px 0 #fff,
-    -1px 0px 0 #fff;
+    0 3px 8px rgba(0, 0, 0, 0.9),
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    -2px -2px 0 rgba(0, 0, 0, 0.4),
+    2px -2px 0 rgba(0, 0, 0, 0.4),
+    -2px 2px 0 rgba(0, 0, 0, 0.4),
+    2px 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* .header__image {
@@ -93,7 +109,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: #000;
+  color: #fff;
 }
 
 .header__paragraph {
@@ -101,15 +117,13 @@
   font-weight: 500;
   font-size: 28px;
   line-height: 36px;
-  color: #000;
+  color: #fff;
   font-family: "Shadows Into Light Two", cursive;
   text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff,
-    0px 1px 0 #fff,
-    1px 0px 0 #fff,
-    0px -1px 0 #fff,
-    -1px 0px 0 #fff;
+    0 2px 6px rgba(0, 0, 0, 0.9),
+    0 1px 3px rgba(0, 0, 0, 0.7),
+    -2px -2px 0 rgba(0, 0, 0, 0.4),
+    2px -2px 0 rgba(0, 0, 0, 0.4),
+    -2px 2px 0 rgba(0, 0, 0, 0.4),
+    2px 2px 0 rgba(0, 0, 0, 0.4);
 }

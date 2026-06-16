@@ -113,6 +113,85 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
+// Background Music Player (YouTube)
+let player;
+let isPlaying = false;
+let playerReady = false;
+
+// Lo-fi café music playlist videos (YouTube IDs)
+// Using regular videos (not live streams) that allow embedding
+const musicVideos = [
+  "lTRiuFIWV54", // Relaxing Jazz Piano Radio - Slow Jazz Music
+  "Dx5qFachd3A", // Lofi hip hop mix - Beats to Relax/Study to
+  "4xDzrJKXOOY", // Smooth Lounge Piano Jazz
+];
+
+let currentVideoIndex = 0;
+
+// YouTube IFrame API ready callback
+window.onYouTubeIframeAPIReady = function () {
+  console.log("YouTube API Ready - Initializing player...");
+  player = new YT.Player("youtube-player", {
+    height: "0",
+    width: "0",
+    videoId: musicVideos[currentVideoIndex],
+    playerVars: {
+      autoplay: 0,
+      controls: 0,
+      loop: 1,
+      playlist: musicVideos.join(","),
+      enablejsapi: 1,
+      origin: window.location.origin,
+    },
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange,
+    },
+  });
+};
+
+function onPlayerReady(event) {
+  console.log("Player ready!");
+  // Set volume to 30% for background music
+  player.setVolume(30);
+  playerReady = true;
+
+  // Enable the music button
+  const musicButton = document.getElementById("musicToggle");
+  if (musicButton) {
+    musicButton.disabled = false;
+    musicButton.title = "Click to play background music";
+    console.log("Music button enabled");
+  }
+}
+
+function onPlayerStateChange(event) {
+  // If video ends, play next one
+  if (event.data === YT.PlayerState.ENDED) {
+    currentVideoIndex = (currentVideoIndex + 1) % musicVideos.length;
+    player.loadVideoById(musicVideos[currentVideoIndex]);
+  }
+}
+
+function toggleMusic() {
+  const musicButton = document.getElementById("musicToggle");
+
+  if (!playerReady || !player || !player.playVideo) {
+    console.error("YouTube player not ready yet, please wait...");
+    return;
+  }
+
+  if (isPlaying) {
+    player.pauseVideo();
+    musicButton.classList.remove("playing");
+    isPlaying = false;
+  } else {
+    player.playVideo();
+    musicButton.classList.add("playing");
+    isPlaying = true;
+  }
+}
+
 // Observe all elements with fade-in-up-scroll class
 document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(".fade-in-up-scroll");
@@ -123,6 +202,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch Mt. Rainier weather on page load
   fetchMtRainierWeather();
+
+  // Setup music toggle button
+  const musicToggle = document.getElementById("musicToggle");
+  if (musicToggle) {
+    musicToggle.addEventListener("click", toggleMusic);
+    console.log("Music toggle button listener attached");
+  }
+
+  // Initialize YouTube player after a delay if API didn't call it
+  setTimeout(() => {
+    if (typeof YT !== "undefined" && !playerReady) {
+      console.log("Manually initializing YouTube player...");
+      window.onYouTubeIframeAPIReady();
+    }
+  }, 2000);
 });
 
 // Back to top button functionality

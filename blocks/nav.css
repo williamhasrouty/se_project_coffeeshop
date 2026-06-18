@@ -79,6 +79,15 @@
   font-family: "Shadows Into Light Two", cursive;
 }
 
+.nav__weather-time {
+  margin: 0 0 5px;
+  font-size: 22px;
+  color: #ffd43b;
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 500;
+  line-height: 1;
+}
+
 .nav__weather-condition {
   margin: 0 0 3px;
   font-size: 18px;

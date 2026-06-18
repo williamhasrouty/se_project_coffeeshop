@@ -84,7 +84,17 @@ async function fetchMtRainierWeather() {
     const temp = Math.round(current.temperature_2m);
     const windSpeed = Math.round(current.wind_speed_10m);
 
+    // Get current time in Pacific timezone
+    const now = new Date();
+    const timeString = now.toLocaleTimeString("en-US", {
+      timeZone: "America/Los_Angeles",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    });
+
     weatherContent.innerHTML = `
+      <p class="nav__weather-time"> ${timeString}</p>
       <p class="nav__weather-condition">${weatherDesc}</p>
       <p class="nav__weather-temp">${temp}°F</p>
       <p class="nav__weather-wind">${windSpeed} mph</p>
@@ -206,6 +216,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch Mt. Rainier weather on page load
   fetchMtRainierWeather();
+
+  // Update weather every 10 minutes
+  setInterval(fetchMtRainierWeather, 10 * 60 * 1000);
 
   // Setup music toggle button
   const musicToggle = document.getElementById("musicToggle");

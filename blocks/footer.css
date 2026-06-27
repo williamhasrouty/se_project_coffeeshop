@@ -2,12 +2,19 @@
   background: linear-gradient(135deg, #0a2850 0%, #1a3a5f 50%, #0f2d45 100%);
   padding: 60px 80px;
   color: #fff;
+
 }
 
 .footer__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+   box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.4),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 40px rgba(88, 166, 255, 0.3);
+    padding: 15px 20px;
+    border-radius: 25px;
 }
 
 .footer__logo {
@@ -53,7 +60,7 @@
 }
 
 .footer__copyright {
-  margin-top: 40px;
+  margin: 40px 0 10px;
   font-size: 20px;
   line-height: 20px;
   text-align: center;

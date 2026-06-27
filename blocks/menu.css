@@ -59,7 +59,7 @@
 
 .menu__daily-special-text {
   margin: 0;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 38px;
   text-align: center;
   color: #2f2f2f;
@@ -78,5 +78,5 @@
   flex-wrap: wrap;
   gap: 100px;
   justify-content: center;
-  
+
 }

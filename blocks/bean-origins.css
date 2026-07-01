@@ -1,22 +1,29 @@
 .bean-origins {
   padding: 100px 80px 120px;
   background-color: #fff;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d9d9d9' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: center / cover no-repeat url("../images/snow-mountain.jpeg");
   position: relative;
 }
 
 .bean-origins__title {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Shadows Into Light Two", cursive;
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
   text-align: center;
   margin: 0 0 24px;
   color: #2f80ed;
+  text-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.8),
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    -3px -3px 0 rgba(0, 0, 0, 0.3),
+    3px -3px 0 rgba(0, 0, 0, 0.3),
+    -3px 3px 0 rgba(0, 0, 0, 0.3),
+    3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .bean-origins__subtitle {
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Shadows Into Light Two", cursive;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -25,6 +32,13 @@
   margin-left: auto;
   margin-right: auto;
   color: #838383;
+  text-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.8),
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    -3px -3px 0 rgba(0, 0, 0, 0.3),
+    3px -3px 0 rgba(0, 0, 0, 0.3),
+    -3px 3px 0 rgba(0, 0, 0, 0.3),
+    3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .bean-origins__map {
@@ -100,7 +114,7 @@
 }
 
 .bean-origins__region-name {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Shadows Into Light Two", cursive;
   font-size: 28px;
   font-weight: 600;
   line-height: 34px;

@@ -49,23 +49,22 @@
               <a href="#contacts" class="nav__link">About Us</a>
             </li>
             <button
-            class="nav__music-toggle"
-            id="musicToggle"
-            title="Loading music player..."
-            disabled
-          >
-            <span class="nav__music-icon">🎵</span>
-          </button>
+              class="nav__music-toggle"
+              id="musicToggle"
+              title="Loading music player..."
+              disabled
+            >
+              <span class="nav__music-icon">🎵</span>
+            </button>
           </ul>
           <div class="nav__weather" id="weatherContent">
             <p class="nav__weather-loading">Loading...</p>
           </div>
-
         </nav>
         <div id="youtube-player" style="display: none"></div>
         <h1 class="header__title fade-in-up-scroll">
           <span class="header__span-accent">Ahweh coffee</span>
-         on Mount Rainier, WA.
+          on Mount Rainier, WA.
         </h1>
         <p class="header__description fade-in-up-scroll">
           Welcome to our study zone! We've got the coffee to energize you and
@@ -135,7 +134,7 @@
                   Mocha
                   <span class="card__list-divider"></span> $4.25
                 </li>
-                 <li class="card__list-item">
+                <li class="card__list-item">
                   Latte <span class="card__list-divider"></span> $4
                 </li>
                 <li class="card__list-item">
@@ -270,6 +269,20 @@
                   id="email-input"
                   placeholder="email@email.com"
               /></label>
+
+              <label for="occasion-input" class="form__label"
+                >Occasion *<select
+                  required
+                  class="form__input"
+                  id="occasion-input"
+                >
+                  <option value="" disabled selected>Select an occasion</option>
+                  <option value="study">Study</option>
+                  <option value="date">Date</option>
+                  <option value="meeting">Meeting</option>
+                  <option value="birthday">Birthday</option>
+                </select></label
+              >
             </fieldset>
             <button class="form__button">Book a table</button>
             <label class="form__label form__label_type_checkbox">

@@ -8,6 +8,7 @@ Triple Peaks Coffee Shop is a stylish and functional webpage designed to showcas
 - Recipe Videos – Embedded coffee recipe videos to entertain and educate visitors.
 - Reservation Form – A simple, functional form where users can book a table.
 - Animation Detail – A subtle animated element that adds charm and personality to the site.
+- Live Weather Widget 
 
 ## Plan on improving the project
 

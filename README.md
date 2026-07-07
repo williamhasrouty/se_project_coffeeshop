@@ -1,6 +1,6 @@
-# Triple Peaks Coffee Shop
+# Ahweh Coffee
 
-Triple Peaks Coffee Shop is a stylish and functional webpage designed to showcase a cozy, modern coffee shop experience. It was created using HTML and CSS, based on the design brief and emphasizes clean design, interactivity, and a welcoming digital atmosphere.
+Ahweh Coffee is a stylish and functional webpage designed to showcase a cozy, modern coffee shop experience. It was created using HTML and CSS, based on the design brief and emphasizes clean design, interactivity, and a welcoming digital atmosphere.
 
 ## Project features
 

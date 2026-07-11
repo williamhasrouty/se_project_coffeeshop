@@ -10,6 +10,7 @@ Ahweh Coffee is a stylish and functional webpage designed to showcase a cozy, mo
 - Animation Detail – A subtle animated element that adds charm and personality to the site.
 - Live Weather Widget 
 - Website Photos by Will H
+- Background Music Ambiance 
 
 ## Plan on improving the project
 
